@@ -14,7 +14,7 @@
 }
 @font-face {
   font-family: "quicksand";
-  src: url(/fonts/Quicksand_Book.otf) format("opentype");
+  src: url(/fonts/Quicksand-VariableFont_wght.ttf) format("opentype");
   font-weight: 800;
 }
 @font-face {
@@ -35,11 +35,6 @@
 }
 
 
-*{
-  padding: 0;
-  margin: 0;
-}
-
 body {
   background: #F2E2B1;
   color: #000;
@@ -51,7 +46,6 @@ h1, h2 ,h3 ,h4 ,h5 ,h6 {
 p, a, li, button {
   font-family: "quicksand", sans-serif;
 }
-
 
 
 .container{
