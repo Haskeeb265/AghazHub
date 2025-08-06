@@ -1,37 +1,60 @@
+
 @import "tailwindcss";
+
+
+@font-face {
+  font-family: "sp-regular";
+  src: url(/fonts/SFPRODISPLAYREGULAR.OTF) format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "sp-bold";
+  src: url(/fonts/SFPRODISPLAYBOLD.OTF) format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "quicksand";
+  src: url(/fonts/Quicksand_Book.otf) format("opentype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "sugarpeachy";
+  src: url(/fonts/SugarPeachy.otf) format("opentype");
+}
+.quicksand {
+  font-family: "quicksand", sans-serif;
+}
+.sp-regular {
+  font-family: "sp-regular", sans-serif;
+}
+.sp-bodl {
+  font-family: "sp-bold", sans-serif;
+}
+.sugarpeachy {
+  font-family: "sugarpeachy", sans-serif;
+}
+
 
 *{
   padding: 0;
   margin: 0;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #F2E2B1;
-    --foreground: #000000;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #F2E2B1;
+  color: #000;
   font-family: Arial, Helvetica, sans-serif;
 }
+h1, h2 ,h3 ,h4 ,h5 ,h6 {
+  font-family: "sp-bold", sans-serif;
+}
+p, a, li, button {
+  font-family: "quicksand", sans-serif;
+}
+
+
 
 .container{
   max-width: 1100px;
-  margin: 0 auto;
   padding: 20px;
 }
