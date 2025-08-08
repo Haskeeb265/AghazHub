@@ -36,7 +36,7 @@
 
 
 body {
-  background: #F2E2B1;
+  background: #ffffff;
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -48,7 +48,46 @@ p, a, li, button {
 }
 
 
-.container{
-  max-width: 1100px;
-  padding: 20px;
+
+/* MARQUEE STYLES */
+.marquee {
+  --gap: 1rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  width: 100%;
+  background: url(/img/marquee-img.jpg) no-repeat center center;
+  background-size: cover;;
+  align-items: center;
+  height: 3rem;
+}
+
+.marquee__content {
+  display: flex;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 45s linear infinite;
+}
+
+.marquee__content li {
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  font-size: 1rem; 
+  font-family: sp-bold;
+}
+  
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* INDEX STYLES */
+.neg-5 {
+  letter-spacing: -0.05em;
 }
