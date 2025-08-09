@@ -43,9 +43,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="CTA-div">
+        <div className="CTA-div mt-28 bg-[#FFE597] w-4xl mx-auto rounded-lg py-3">
           <div className="CTA-heading">
-            <h2 className="">All Oppurtunities in Place!</h2>
+            <h2 className="flex items-center justify-center text-6xl ">All Oppurtunities in <Image src="/img/IndexFingerEmoji.svg" alt="Index finger emoji" width={70} height={70}></Image> Place!</h2>
           </div>
         </div>
 
