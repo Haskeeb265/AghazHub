@@ -88,6 +88,25 @@ p, a, li, button {
 
 
 /* INDEX STYLES */
-.neg-5 {
-  letter-spacing: -0.05em;
-}
+  .neg-5 {
+    letter-spacing: -0.05em;
+  }
+
+    /*CTA STYLES */
+  @keyframes pulse-scale {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes pulse-scale-reverse{
+    0%, 100% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }

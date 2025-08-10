@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
     return(
@@ -13,10 +14,18 @@ export default function Navbar() {
             
             <nav> {/*These are navlinks */}
               <ul className="flex gap-11 quicksand">
-                <li className='hover:text-[#EF3B51] transition-colors duration-300 ease-in-out'><a href="#">Home</a></li>
-                <li className='hover:text-[#EF3B51] transition-colors duration-300 ease-in-out'><a href="#">About Us</a></li>
-                <li className='hover:text-[#EF3B51] transition-colors duration-300 ease-in-out'><a href="#">Explore</a></li>
-                <li className='hover:text-[#EF3B51] transition-colors duration-300 ease-in-out'><a href="#">Contact Us</a></li>
+                <li className='hover:text-[#EF3B51] transition-colors duration-300 ease-in-out'>
+                  <Link href="#">Home</Link>
+                </li>
+                <li className='hover:text-[#EF3B51] transition-colors duration-300 ease-in-out'>
+                  <Link href="#">About Us</Link>
+                </li>
+                <li className='hover:text-[#EF3B51] transition-colors duration-300 ease-in-out'>
+                  <Link href="#">Explore</Link>
+                </li>
+                <li className='hover:text-[#EF3B51] transition-colors duration-300 ease-in-out'>
+                  <Link href="#">Contact Us</Link>
+                </li>
               </ul>
             </nav>
             
