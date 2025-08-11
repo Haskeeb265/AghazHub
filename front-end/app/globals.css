@@ -110,3 +110,11 @@ p, a, li, button {
       transform: scale(1);
     }
   }
+
+
+  /*FOOTER STYLES*/
+.footer-container{
+  max-width: 868px;
+  height: 192px;
+  padding: 87 63;
+}
