@@ -4,48 +4,44 @@ import Link from "next/link"
 export default function Footer() {
     
     return (
-    
-        <footer className="bg-[url('/img/footer-img.png')] bg-cover bg-center w-full py-16">
-            <div className="bg-[#F2E2B1]/50 max-w-[994px] rounded-[150px] h-100 mx-auto">
-                <div className="footer-container grid grid-cols-4  ">
-                    
-                    <div className="col-span-3 grid grid-rows-[min-content_min-content_min-content_min-content] ">
-                        <div className="row-1">
-                            <Image src="/img/footer-logo.svg" alt="Footer Logo" width={191} height={191} />
-                        </div>
-                        
-                        <div className="row-2 flex gap-1 items-center">
-                            <p className="sp-regular neg-5 text-[#fff] text-4xl">You don't need to scroll anywhere else</p>
-                            <Image src="/img/brown-heart.svg" alt="brown heart" width={30} height={30} />
-                        </div>
+        
+        <footer className="relative bg-[url('/img/footer-img.png')] bg-cover bg-center h-[500px] justify-items-center w-full">
+            <div className=" absolute inset-0 bg-black/20"></div>
 
-                        <div className="row-3 mt-4 ">
-                            <Link className="text-base text-[#fff] px-3 py-2 rounded-full sp-regular neg-5 bg-[#EF3B51]"  href="/explore">Explore <Image className="inline mx-1" src="/img/explore-btn-arrow.svg" alt="213" width={20} height={20}></Image></Link>
-                        </div>
-                        
-                        <div className="row-4 border-t mt-10 flex items-center justify-between">
-                   
-                                <p className="text-[10px] neg-5">© 2025 AghazHub. All rights reserved.</p>
-          
-                       
-                                <p className="text-[10px] neg-5">Made with <span className="text-[#CF0F26]">&lt;3</span></p>
-                          
-                            <div className="flex gap-5">
-                                <Link className="text-[10px] neg-5" href="/toc">Terms and conditions</Link>
-                                <Link className="text-[10px] neg-5" href="/privacy">Privacy Policy</Link>
-                            </div>
-                        </div>
-
+            <div className="footerBg rounded-full footer-container relative bg-[#F2E2B1]/50">
+                <div className="row-1 flex items-center justify-between">
+                    <div>
+                        <Image src="/img/footer-logo.svg" alt="Footer Image" width={191} height={191} />
                     </div>
+                    <div className="scrollButton">
+                        <button className="cursor-pointer bg-[#F88356] rounded-full outline-2 outline-dotted outline-[#EF3B51]  hover:bg-[#EF3B51] hover:outline-[#000] transition duration-300 ease-in-out " onClick={() => window.scrollTo({top:0, behavior:"smooth"})}><Image src="/img/arrow-top-large.svg" alt="arrow" width={30} height={30} /> </button>
+                    </div>
+                </div>
+                <div className="row-2">
+                    <div className="row-items w-[60%]">
+                        <div className="flex items-center gap-1">
+                            <h3 className="neg-5 text-[#fff] sp-regular text-[32px]">You don't need to scroll anywhere else</h3>
+                            <Image src="img/brown-heart.svg" alt="brown heart" width={30} height={30} />
+                        </div>
+                        <div className="footer-btn">
+                            <Link href="#explore" className="flex text-center gap-0.5 bg-[#EF3B51] px-4 py-1 rounded-full w-[100px] text-6 neg-5 text-[#fff] sp-regular hover:bg-[#F88356] transition duration-300 ease-in-out ">Explore<Image src="img/explore-btn-arrow.svg" alt="arrow" width={20} height={20} /></Link>
 
-                    <div className="grid grid-rows-4">
-                        <div className="row-1">
-                            <button className="cursor-pointer bg-[#F88356]" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} >asd</button>
+                        </div>
+                        <div className="row-border border-t-1 mt-10">
+                            <p className="neg-5 quicksand text-[10px]">© 2025 AghazHub. All rights reserved.</p>
+                            <p className="neg-5 quicksand text-[10px]">Made with <span className="text-[#CF0F26]">&lt;3</span></p>
+                            <div className="footer-links">
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+    
             
+            
+
         </footer>
 
     )
