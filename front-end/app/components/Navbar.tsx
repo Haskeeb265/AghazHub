@@ -13,7 +13,7 @@ export default function Navbar() {
             </div>
             
             <nav> {/*These are navlinks */}
-              <ul className="flex gap-11 quicksand">
+              <ul className="flex gap-11 quicksand font-bold">
                 <li className='hover:text-[#EF3B51] transition-colors duration-300 ease-in-out'>
                   <Link href="#">Home</Link>
                 </li>
@@ -31,7 +31,7 @@ export default function Navbar() {
             
           </div>
 
-          <div className='account-btn bg-[#EF3B51] rounded-lg text-white px-2 py-1  border-black border-1 hover:bg-[#F88356] transition-colors duration-300 ease-in-out'>
+          <div className='account-btn bg-[#EF3B51] font-bold rounded-lg text-white px-2 py-1  border-black border-1 hover:bg-[#F88356] transition-colors duration-300 ease-in-out'>
             <a href="account">Login</a>
           </div>
         

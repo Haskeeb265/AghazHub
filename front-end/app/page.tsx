@@ -49,10 +49,10 @@ export default function Home() {
           <div className="CTA-heading bg-[#FFE597] w-4xl mx-auto rounded-lg py-3">
             <h2 className="flex items-center justify-center text-6xl ">All Oppurtunities in <Image src="/img/IndexFingerEmoji.svg" alt="Index finger emoji" width={70} height={70}></Image> Place!</h2>
           </div>
-          <div className="CTA-text text-center text-md mt-5 w-2xl mx-auto">
+          <div className="CTA-text font-bold text-center text-md mt-5 w-2xl mx-auto">
             <p>Ready to find your dream internship and kickstart your journey? Connect with fellow interns, grow your network, and gain the experience you need to shape the future you believe in!</p>
           </div>
-          <div className="CTA-button text-center items-center mt-2 flex justify-center mb-2">
+          <div className="CTA-button text-center items-center mt-2 flex justify-center mb-2 font-bold">
             <Image className="self-start" style={{ animation: 'pulse-scale 2s ease-in-out infinite'}} src="/img/star-emoji.svg" alt="Star emoji" width={35} height={35} />
             <Link href="#explore" className="border-1 text-sm rounded-md px-2 py-2 hover:border-none hover:bg-[#EF3B51] hover:text-[#FFF] transition duration-300 ease-in-out ">Karein Aghaz?</Link>
             <Image className="self-end mt-5"  style={{ animation: 'pulse-scale-reverse 2s ease-in-out infinite' }} src="/img/star-emoji.svg" alt="Star emoji" width={35} height={35} />
