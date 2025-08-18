@@ -18,38 +18,52 @@ export default function Home() {
       
       <main className="hero_sec my-20 container mx-auto">
 
-        <div className="header_div flex items-center justify-center gap-2.5">
-          <h1 className="hero_heading text-5xl md:text-6xl neg-5">Welcome to Aghaz Hub</h1>
-          <Image src="/img/blackhole.png" alt="Hero Image" width={106} height={106} />
+        <div className="header_div flex flex-col-reverse md:flex-row items-center justify-center gap-2.5">
+          <div className="hero-heading-div">
+          <h1 className="hero_heading text-center text-3xl md:text-6xl neg-5">Welcome to Aghaz Hub</h1>
+          </div>
+          <div className="hero-img-div">
+          <Image src="/img/blackhole.png"  alt="Hero Image" width={106} height={106} />
+          </div>
         </div>
 
-        <div className="hero_content flex items-center justify-center mt-5 gap-15">
+        <div className="hero_content flex flex-col-reverse md:flex-row items-center justify-center mt-5 gap-15">
           <div className="hero_text neg-5">
             
-            <div className="item flex mt-1 items-center gap-1.5">
-              <h2 className="text-4xl ">Find Internships</h2>
+            <div className="item flex mt-1 items-center justify-between gap-1.5">
+              <h2 className="text-3xl md:text-4xl text-end w-full ">Find Internships</h2>
               <Image src="/img/laptop.svg" alt="Laptop Image" width={44} height={44} />
             </div>
-            <div className="item flex mt-1 items-center">
-              <h2 className="text-4xl ">Grow your Network</h2>
+            <div className="item flex mt-1 items-center justify-between">
+              <h2 className="text-3xl md:text-4xl text-end w-full ">Grow your Network</h2>
               <Image src="/img/bobatea.svg" alt="BobaTea Image" width={44} height={44} />
             </div>
-            <div className="item flex mt-1 items-center gap-1.5">
-              <h2 className="text-4xl ">Kickstart your Goals</h2>
+            <div className="item flex mt-1 items-center justify-between gap-1.5">
+              <h2 className="text-3xl md:text-4xl text-end w-full ">Kickstart your Goals</h2>
               <Image src="/img/rocket.svg" alt="Rocket Image" width={44} height={44} />
             </div>
 
           </div>
           <div className="animation-div">
-            <Animation />
+            <Animation/>
           </div>
         </div>
 
         <div className="CTA-div mt-30 ">
-          <div className="CTA-heading bg-[#FFE597] w-4xl mx-auto rounded-lg py-3">
-            <h2 className="flex items-center justify-center text-6xl ">All Oppurtunities in <Image src="/img/IndexFingerEmoji.svg" alt="Index finger emoji" width={70} height={70}></Image> Place!</h2>
+          <div className="CTA-heading bg-[#FFE597] w-xsm md:w-4xl mx-auto rounded-lg py-1 md:py-3">
+            <h2 className="flex items-center justify-center text-2xl md:text-6xl">
+              All Opportunities in 
+              <Image
+                src="/img/IndexFingerEmoji.svg"
+                alt="Index finger emoji"
+                width={70}
+                height={70}
+                className="w-[30px] h-[30px] md:w-[70px] md:h-[70px] inline-block ml-2"
+              />
+              Place!
+            </h2>
           </div>
-          <div className="CTA-text font-bold text-center text-md mt-5 w-2xl mx-auto">
+          <div className="CTA-text font-bold text-center text-sm md:w-150 md:text-md mt-5 mx-auto">
             <p>Ready to find your dream internship and kickstart your journey? Connect with fellow interns, grow your network, and gain the experience you need to shape the future you believe in!</p>
           </div>
           <div className="CTA-button text-center items-center mt-2 flex justify-center mb-2 font-bold">

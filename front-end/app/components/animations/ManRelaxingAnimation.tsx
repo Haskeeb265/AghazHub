@@ -3,7 +3,7 @@ import Animation from "@animations/ManRelaxingAnimation.json";
 
 export default function RelaxingAnimation() {
     return (
-        <div className="animation-container w-[450px]">
+        <div className="animation-container md:w-[450px]">
             <Lottie animationData={Animation}
              loop={true}
              autoplay

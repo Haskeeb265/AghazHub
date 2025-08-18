@@ -7,8 +7,8 @@ export default function Navbar() {
 
   return (
     <header>
-      <div className="navbar md:container flex items-center justify-center gap-40 mx-auto mb-5">
-        <div className='flex items-center justify-between gap-40 w-full'>
+      <div className="navbar md:container flex items-center justify-center gap-15 mx-auto mb-5">
+        <div className='flex items-center justify-between gap-20'>
           <div className="logo">
             <a href="#"><Image src="/img/Logo.svg" alt="AghazHub Logo" width={178} height={178} /></a>
           </div>
@@ -26,7 +26,7 @@ export default function Navbar() {
 
           {/* Nav links for md and up */}
           <nav className="hidden md:block">
-            <ul className="flex gap-11 quicksand font-bold">
+            <ul className="flex gap-11 quicksand font-bold text-md">
               <li className='hover:text-[#EF3B51] transition-colors duration-300 ease-in-out'>
                 <Link href="#">Home</Link>
               </li>
