@@ -19,7 +19,7 @@ export default function Home() {
       <main className="hero_sec my-20 container mx-auto">
 
         <div className="header_div flex items-center justify-center gap-2.5">
-          <h1 className="hero_heading text-6xl neg-5">Welcome to Aghaz Hub</h1>
+          <h1 className="hero_heading text-5xl md:text-6xl neg-5">Welcome to Aghaz Hub</h1>
           <Image src="/img/blackhole.png" alt="Hero Image" width={106} height={106} />
         </div>
 
