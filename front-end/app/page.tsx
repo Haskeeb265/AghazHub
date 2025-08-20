@@ -16,7 +16,7 @@ export default function Home() {
       <div className="w-full border-1 mb-10"></div>        
       <Marquee />
       
-      <main className="hero_sec my-20 container mx-auto">
+      <main className="hero_sec my-20  mx-auto">
 
         <div className="header_div flex flex-col-reverse md:flex-row items-center justify-center gap-2.5">
           <div className="hero-heading-div">
@@ -27,19 +27,19 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero_content flex flex-col-reverse md:flex-row items-center justify-center mt-5 gap-15">
+        <div className="hero_content flex flex-col-reverse md:flex-row items-center justify-center mt-5 gap-1">
           <div className="hero_text neg-5">
             
             <div className="item flex mt-1 items-center justify-between gap-1.5">
-              <h2 className="text-3xl md:text-4xl text-end w-full ">Find Internships</h2>
+              <h2 className="text-3xl lg:text-4xl text-end w-full ">Find Internships</h2>
               <Image src="/img/laptop.svg" alt="Laptop Image" width={44} height={44} />
             </div>
             <div className="item flex mt-1 items-center justify-between">
-              <h2 className="text-3xl md:text-4xl text-end w-full ">Grow your Network</h2>
+              <h2 className="text-3xl lg:text-4xl text-end w-full ">Grow your Network</h2>
               <Image src="/img/bobatea.svg" alt="BobaTea Image" width={44} height={44} />
             </div>
             <div className="item flex mt-1 items-center justify-between gap-1.5">
-              <h2 className="text-3xl md:text-4xl text-end w-full ">Kickstart your Goals</h2>
+              <h2 className="text-3xl lg:text-4xl text-end w-full ">Kickstart your Goals</h2>
               <Image src="/img/rocket.svg" alt="Rocket Image" width={44} height={44} />
             </div>
 
@@ -49,9 +49,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="CTA-div mt-30 ">
-          <div className="CTA-heading bg-[#FFE597] w-xsm md:w-4xl mx-auto rounded-lg py-1 md:py-3">
-            <h2 className="flex items-center justify-center text-2xl md:text-6xl">
+        <div className="CTA-div mt-20 ">
+          <div className="CTA-heading bg-[#FFE597] sm:w-xl md:w-3xl mx-auto rounded-lg py-1 md:py-3">
+            <h2 className="flex items-center justify-center text-2xl sm:text-4xl md:text-6xl">
               All Opportunities in 
               <Image
                 src="/img/IndexFingerEmoji.svg"
