@@ -1,9 +1,20 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Animation from "@components/animations/PixelDuck";
 
 export default function Login(){
+
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        console.log("Username:", username);
+        console.log("Password:", password);
+    };
+
     return(
         <div className="loginPage">
         
@@ -33,9 +44,27 @@ export default function Login(){
 
                 <form className="flex flex-col w-[50%] mx-auto">
 
-                    <input className="quicksand text-md border-1 px-2 py-1 font-semibold text-[#000] rounded-[5] placeholder-[#F88356] text-[14px]" placeholder="Username"></input>
-                    <input className="quicksand text-md border-1 px-2 py-1 font-semibold text-[#000] rounded-[5] placeholder-[#F88356] text-[14px] mt-5" placeholder="Password"></input>
-
+                    <input 
+                    required 
+                    type="text" 
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    className="quicksand text-md border-1 px-2 py-1 font-semibold text-[#000] rounded-[5] placeholder-[#F88356] text-[14px]" 
+                    placeholder="Username"
+                    />
+                    
+                    <input 
+                    required 
+                    type="password" 
+                    value={password} 
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="quicksand text-md border-1 px-2 py-1 font-semibold text-[#000] rounded-[5] placeholder-[#F88356] text-[14px] mt-5" 
+                    placeholder="Password" 
+                    />
+                    
+                    
+                    
+                    <button type="submit" onClick={handleSubmit} className="bg-[#EF3B51] font-bold rounded-lg text-white px-2 py-1 border-black border-1 hover:bg-[#F88356] transition-colors duration-300 ease-in-out mt-5">Sign in</button>
                 </form>
 
             </div>
