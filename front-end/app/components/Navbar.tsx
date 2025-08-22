@@ -66,7 +66,7 @@ export default function Navbar() {
               <Link href="#" onClick={() => setMenuOpen(false)}>Contact Us</Link>
             </li>
             <li>
-              <a href="account" className="account-btn bg-[#EF3B51] font-bold rounded-lg text-white px-2 py-1 border-black border-1 hover:bg-[#F88356] transition-colors duration-300 ease-in-out block text-center">
+              <a href="/Login" className="account-btn bg-[#EF3B51] font-bold rounded-lg text-white px-2 py-1 border-black border-1 hover:bg-[#F88356] transition-colors duration-300 ease-in-out block text-center">
                 Login
               </a>
             </li>

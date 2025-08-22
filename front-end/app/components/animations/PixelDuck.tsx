@@ -7,7 +7,7 @@ export default function PixelDuck() {
             <Lottie animationData={Animation}
              loop={true}
              autoplay
-             style={{width:"60px", height:"60px"}} />
+             style={{width:"100px", height:"100px"}} />
         </div>
     );
 }
