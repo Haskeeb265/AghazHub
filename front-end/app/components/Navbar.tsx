@@ -45,7 +45,7 @@ export default function Navbar() {
 
         {/* Account button for md and up */}
         <div className='account-btn bg-[#EF3B51] font-bold rounded-lg text-white px-2 py-1 border-black border-1 hover:bg-[#F88356] transition-colors duration-300 ease-in-out hidden md:block'>
-          <a href="account">Login</a>
+          <Link href="/Login">Login</Link>
         </div>
       </div>
 
