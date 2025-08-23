@@ -61,12 +61,27 @@ export default function Login(){
                     className="quicksand text-md border-1 px-2 py-1 font-semibold text-[#000] rounded-[5] placeholder-[#F88356] text-[14px] mt-5" 
                     placeholder="Password" 
                     />
-                    
-                    
-                    
-                    <button type="submit" onClick={handleSubmit} className="bg-[#EF3B51] font-bold rounded-lg text-white px-2 py-1 border-black border-1 hover:bg-[#F88356] transition-colors duration-300 ease-in-out mt-5">Sign in</button>
+
+                    <button 
+                    type="submit" 
+                    onClick={handleSubmit} 
+                    className="cursor-pointer mx-auto bg-[#EF3B51] w-[50%] font-bold rounded-lg text-white py-0.5 hover:bg-[#F88356] transition-colors duration-300 ease-in-out mt-5">Login
+                    </button>
+                
                 </form>
 
+                <div className="forgetPassword text-center mt-2">
+                    <Link href="/forgetpassword" className="text-[12px] text-[#EF3B51] hover:bg-[#F88356] transition-colors duration-300 ease-in-out font-semibold">Forgot Password?</Link>
+                </div>
+
+            </div>
+
+            <div className="socialLogin">
+                <div className="flex items-center justify-center gap-3">
+                    <div className="border-t-1"></div>
+                    <p>Or sign in with</p>
+                    <div className="border-t-1"></div>
+                </div>
             </div>
         
         </div>
