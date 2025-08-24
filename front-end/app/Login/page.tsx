@@ -21,7 +21,7 @@ export default function Login(){
                 <div className="loginHeader">
 
                     <div className="loginLogo flex justify-center mt-[20px]">
-                        <Image src="/img/blackhole.png" alt="logo" width={"100"} height={"100"} />
+                        <Link href="/"><Image src="/img/blackhole.png" alt="logo" width={"100"} height={"100"} /></Link>
                     </div>
 
                     <div className="loginText">
@@ -93,7 +93,7 @@ export default function Login(){
                 </div>
 
                 <div className="signUp text-center mt-10 md:mt-20 quicksand font-semibold text-[12px] flex items-center justify-center gap-0.5">
-                    <p>Don't have an account? <Link className="text-[#EF3B51]" href="#">SIGN UP!</Link> It's free</p>
+                    <p>Don't have an account? <Link className="text-[#EF3B51]" href="/Signup">SIGN UP!</Link> It's free</p>
                     <Image src="img/brown-heart.svg" alt="heart icon" width={15} height={15} />
                 </div>
             
